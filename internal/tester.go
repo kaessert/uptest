@@ -301,6 +301,7 @@ func (t *Tester) prepareConfig() (*config.TestCase, []config.Resource, error) { 
 		Timeout:                  t.options.DefaultTimeout,
 		SetupScriptPath:          t.options.SetupScriptPath,
 		TeardownScriptPath:       t.options.TeardownScriptPath,
+		PostAssertScriptPath:     t.options.PostAssertScriptPath,
 		OnlyCleanUptestResources: t.options.OnlyCleanUptestResources,
 		TestDirectory:            "test-input.yaml",
 	}
